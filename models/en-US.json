@@ -1,0 +1,167 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "trivia pal dynamic",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DailyGame",
+                    "slots": [
+                        {
+                            "name": "answerA",
+                            "type": "AMAZON.SearchQuery"
+                        },
+                        {
+                            "name": "answerB",
+                            "type": "AMAZON.SearchQuery"
+                        },
+                        {
+                            "name": "answerC",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "ask me my daily questions",
+                        "start my daily game"
+                    ]
+                },
+                {
+                    "name": "UserLocation",
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.US_CITY"
+                        }
+                    ],
+                    "samples": [
+                        "{city} ",
+                        "in {city}",
+                        "I live in {city}",
+                        "I am in {city}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.LocalBusiness",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "ten"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eight"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "seven"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "six"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "five"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "four"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "three"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "two"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "DailyGame",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "answerA",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1050798741753.440913300054"
+                            }
+                        },
+                        {
+                            "name": "answerB",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "answerC",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1050798741753.440913300054",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "placeholder"
+                    }
+                ]
+            }
+        ]
+    }
+}
