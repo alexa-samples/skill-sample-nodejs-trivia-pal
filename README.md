@@ -1,6 +1,9 @@
 # Advanced Alexa Skills Using Dialog Management 
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/header._TTH_.png" />
 
+# ** This repository has been archived **
+This repository is still available as a point-in-time reference, but no further updates or support will be prioritized.
+
 ## What You Will Learn
 *  [AWS Lambda](http://aws.amazon.com/lambda)
 *  [Alexa Skills Kit (ASK)](https://developer.amazon.com/alexa-skills-kit)
